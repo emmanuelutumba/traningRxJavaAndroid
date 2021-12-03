@@ -51,4 +51,12 @@ public class TaskViewModel extends AndroidViewModel {
                 this.error.postValue(taskHttpResponse.getMessage());
         });
     }
+
+    public MutableLiveData<String> getError() {
+        return error;
+    }
+
+    public MutableLiveData<String> getSuccess() {
+        return success;
+    }
 }
